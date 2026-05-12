@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chloé — Thời Trang 4 Mùa</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <script src="js/app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">CHLOÉ</div>
+  <ul class="nav-links">
+    <li><a href="#home">Trang Chủ</a></li>
+    <li><a href="#seasons">Bộ Sưu Tập</a></li>
+    <li><a href="#products">Sản Phẩm</a></li>
+    <li><a href="#about">Giới Thiệu</a></li>
+  </ul>
+  <div class="nav-actions">
+    <button class="cart-btn" onclick="toggleCart()">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="season-orb orb1"></div>
+    <div class="season-orb orb2"></div>
+    <div class="season-orb orb3"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-sub">Bộ sưu tập mới 2026</p>
+    <h1 class="hero-title">Thời Trang<br/><em>Bốn Mùa</em></h1>
+    <p class="hero-desc">Phong cách tinh tế — Chất lượng vượt trội<br/>Mỗi mùa, một câu chuyện riêng</p>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="scrollTo('#seasons')">Khám Phá Ngay</button>
+      <button class="btn-ghost" onclick="scrollTo('#products')">Xem Sản Phẩm</button>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <svg viewBox="0 0 320 420" xmlns="http://www.w3.org/2000/svg"></svg>
+    <!-- SVG Fashion Illustration -->
+     
+    <div >
+      
+    </div>
+      <!-- Background circle -->
+      <circle cx="160" cy="210" r="155" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <!-- Dress/outfit silhouette -->
+      <g transform="translate(80,40)">
+        <!-- Head -->
+        <circle cx="80" cy="40" r="28" fill="#f4c7a8" stroke="#e8a882" stroke-width="1.5"/>
+        <!-- Hair -->
+        <path d="M52,32 Q80,10 108,32 Q112,55 108,60 Q80,68 52,60 Z" fill="#2c1810"/>
+        <path d="M52,32 Q44,50 48,70 Q54,65 56,55 Z" fill="#2c1810"/>
+        <path d="M108,32 Q116,50 112,70 Q106,65 104,55 Z" fill="#2c1810"/>
+        <!-- Face -->
+        <circle cx="70" cy="42" r="3.5" fill="#4a3728"/>
+        <circle cx="90" cy="42" r="3.5" fill="#4a3728"/>
+        <path d="M72,52 Q80,58 88,52" stroke="#c0785a" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <!-- Neck -->
+        <rect x="72" y="66" width="16" height="18" rx="4" fill="#f0bb97"/>
+        <!-- Outfit - winter coat -->
+        <path d="M45,84 Q28,95 22,140 L58,145 L62,200 L98,200 L102,145 L138,140 Q132,95 115,84 Z" fill="#8B4513"/>
+        <path d="M45,84 Q60,100 80,98 Q100,100 115,84" fill="#7a3d10" stroke="#7a3d10"/>
+        <!-- Coat collar -->
+        <path d="M55,84 Q65,110 80,112 Q95,110 105,84 L98,80 Q90,105 80,106 Q70,105 62,80 Z" fill="#6b3310"/>
+        <!-- Coat buttons -->
+        <circle cx="80" cy="125" r="4" fill="#5c2d0a"/>
+        <circle cx="80" cy="145" r="4" fill="#5c2d0a"/>
+        <circle cx="80" cy="165" r="4" fill="#5c2d0a"/>
+        <!-- Belt -->
+        <rect x="56" y="157" width="48" height="10" rx="3" fill="#3d1a05"/>
+        <rect x="76" y="155" width="8" height="14" rx="2" fill="#c8960c"/>
+        <!-- Skirt -->
+        <path d="M62,200 Q45,240 35,280 L125,280 Q115,240 98,200 Z" fill="#5c2d8a"/>
+        <!-- Skirt pattern -->
+        <path d="M62,200 Q70,230 80,260 Q90,230 98,200" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+        <!-- Boots -->
+        <rect x="48" y="278" width="25" height="45" rx="6" fill="#1a0a00"/>
+        <rect x="87" y="278" width="25" height="45" rx="6" fill="#1a0a00"/>
+        <rect x="46" y="316" width="29" height="10" rx="3" fill="#0d0500"/>
+        <rect x="85" y="316" width="29" height="10" rx="3" fill="#0d0500"/>
+        <!-- Scarf -->
+        <path d="M52,78 Q80,92 108,78 Q115,86 108,90 Q80,104 52,90 Z" fill="#e84545" opacity="0.9"/>
+        <path d="M52,80 L42,110 Q44,114 48,110 L56,84" fill="#e84545" opacity="0.9"/>
+      </g>
+      <!-- Floating season icons -->
+      <g class="float-icons">
+        <!-- Spring flower -->
+        <g transform="translate(20,100)">
+          <circle cx="0" cy="0" r="6" fill="#ff9eb5"/>
+          <circle cx="10" cy="-5" r="5" fill="#ffb3c6"/>
+          <circle cx="10" cy="5" r="5" fill="#ffb3c6"/>
+          <circle cx="-10" cy="-5" r="5" fill="#ffb3c6"/>
+          <circle cx="-10" cy="5" r="5" fill="#ffb3c6"/>
+          <circle cx="0" cy="0" r="4" fill="#ffe066"/>
+        </g>
+        <!-- Summer sun -->
+        <g transform="translate(270,80)">
+          <circle cx="0" cy="0" r="12" fill="#ffd700"/>
+          <line x1="0" y1="-18" x2="0" y2="-22" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+          <line x1="0" y1="18" x2="0" y2="22" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+          <line x1="-18" y1="0" x2="-22" y2="0" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+          <line x1="18" y1="0" x2="22" y2="0" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+          <line x1="-13" y1="-13" x2="-16" y2="-16" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+          <line x1="13" y1="-13" x2="16" y2="-16" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+          <line x1="-13" y1="13" x2="-16" y2="16" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+          <line x1="13" y1="13" x2="16" y2="16" stroke="#ffd700" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        <!-- Autumn leaf -->
+        <g transform="translate(285,310) rotate(-20)">
+          <path d="M0,0 Q15,-20 10,-35 Q5,-20 -10,-30 Q0,-15 0,0 Z" fill="#e85d04"/>
+          <path d="M0,0 L0,-20" stroke="#bf4800" stroke-width="1.5"/>
+        </g>
+        <!-- Winter snowflake -->
+        <g transform="translate(28,320)">
+          <line x1="-12" y1="0" x2="12" y2="0" stroke="#a8d8ea" stroke-width="2"/>
+          <line x1="0" y1="-12" x2="0" y2="12" stroke="#a8d8ea" stroke-width="2"/>
+          <line x1="-8" y1="-8" x2="8" y2="8" stroke="#a8d8ea" stroke-width="2"/>
+          <line x1="8" y1="-8" x2="-8" y2="8" stroke="#a8d8ea" stroke-width="2"/>
+          <circle cx="0" cy="0" r="3" fill="#a8d8ea"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<!-- SEASON TABS -->
+ <!--ANH CHINH-->
+ <div class="banner-container">
+    <img src="img/anh chinh.webp" alt="anhchinh">
+</div>
+<section id="seasons" class="seasons-section">
+  <div class="container">
+    <h2 class="section-title">Bộ Sưu Tập Theo Mùa</h2>
+    <div class="season-tabs">
+      <button class="tab-btn active" data-season="spring" onclick="filterSeason('spring')">
+        <span class="tab-icon">🌸</span> Mùa Xuân
+      </button>
+      <button class="tab-btn" data-season="summer" onclick="filterSeason('summer')">
+        <span class="tab-icon">☀️</span> Mùa Hè
+      </button>
+      <button class="tab-btn" data-season="autumn" onclick="filterSeason('autumn')">
+        <span class="tab-icon">🍂</span> Mùa Thu
+      </button>
+      <button class="tab-btn" data-season="winter" onclick="filterSeason('winter')">
+        <span class="tab-icon">❄️</span> Mùa Đông
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products-section">
+  <div class="container">
+    <div class="products-header">
+      <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+      <div class="filter-bar">
+        <select id="sortSelect" onchange="sortProducts(this.value)">
+          <option value="default">Sắp xếp</option>
+          <option value="price-asc">Giá tăng dần</option>
+          <option value="price-desc">Giá giảm dần</option>
+          <option value="name">Tên A-Z</option>
+        </select>
+      </div>
+    </div>
+    <div class="products-grid" id="productsGrid">
+      <!-- Injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / BANNER -->
+<section id="about" class="about-section">
+  <div class="about-inner">
+    <div class="about-text">
+      <p class="about-label">Về Chúng Tôi</p>
+      <h2>Thời Trang Đến Từ<br/><em>Cảm Hứng Thiên Nhiên</em></h2>
+      <p>CHLOÉ ra đời từ niềm đam mê với thiên nhiên và thời trang. Mỗi bộ sưu tập lấy cảm hứng từ vẻ đẹp riêng của từng mùa — từ sắc hồng tinh khôi của mùa xuân đến những sắc vàng ấm áp của mùa thu.</p>
+      <div class="stats-row">
+        <div class="stat"><span>500+</span><p>Sản phẩm</p></div>
+        <div class="stat"><span>10K+</span><p>Khách hàng</p></div>
+        <div class="stat"><span>4</span><p>Bộ sưu tập</p></div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" class="about-svg">
+        <defs>
+          <linearGradient id="springGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ffcce0"/>
+            <stop offset="100%" style="stop-color:#fff0f5"/>
+          </linearGradient>
+          <linearGradient id="summerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#fff4a0"/>
+            <stop offset="100%" style="stop-color:#ffe066"/>
+          </linearGradient>
+          <linearGradient id="autumnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#ff9a44"/>
+            <stop offset="100%" style="stop-color:#e85d04"/>
+          </linearGradient>
+          <linearGradient id="winterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#c2e0ff"/>
+            <stop offset="100%" style="stop-color:#a8d8ea"/>
+          </linearGradient>
+        </defs>
+        <!-- Four quadrants -->
+        <path d="M150,0 L300,0 L300,150 L150,150 Z" fill="url(#summerGrad)" opacity="0.8"/>
+        <path d="M0,0 L150,0 L150,150 L0,150 Z" fill="url(#springGrad)" opacity="0.8"/>
+        <path d="M0,150 L150,150 L150,300 L0,300 Z" fill="url(#winterGrad)" opacity="0.8"/>
+        <path d="M150,150 L300,150 L300,300 L150,300 Z" fill="url(#autumnGrad)" opacity="0.8"/>
+        <!-- Center circle -->
+        <circle cx="150" cy="150" r="40" fill="white" opacity="0.9"/>
+        <text x="150" y="146" text-anchor="middle" font-family="Playfair Display" font-size="10" fill="#333">SÉASON</text>
+        <text x="150" y="160" text-anchor="middle" font-family="DM Sans" font-size="7" fill="#666">4 SEASONS</text>
+        <!-- Season labels -->
+        <text x="220" y="80" text-anchor="middle" font-family="DM Sans" font-size="11" fill="#8B6914">☀️ Hè</text>
+        <text x="80" y="80" text-anchor="middle" font-family="DM Sans" font-size="11" fill="#c06080">🌸 Xuân</text>
+        <text x="80" y="230" text-anchor="middle" font-family="DM Sans" font-size="11" fill="#3a7abf">❄️ Đông</text>
+        <text x="220" y="230" text-anchor="middle" font-family="DM Sans" font-size="11" fill="#bf5000">🍂 Thu</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">SÉASON</div>
+      <p>Thời trang bốn mùa — Phong cách không giới hạn</p>
+    </div>
+    <div class="footer-links">
+      <h4>Liên kết</h4>
+      <a href="#">Chính sách đổi trả</a>
+      <a href="#">Hướng dẫn size</a>
+      <a href="#">Liên hệ</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Liên hệ</h4>
+      <p>📧 hello@season.vn</p>
+      <p>📞 0902 460 618</p>
+      <p>📍 Hồ Chí Minh Việt Nam</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 SÉASON. All rights reserved.</div>
+</footer>
+
+<!-- CART SIDEBAR -->
+<div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-header">
+    <h3>Giỏ Hàng</h3>
+    <button onclick="toggleCart()">✕</button>
+  </div>
+  <div class="cart-items" id="cartItems">
+    <p class="cart-empty">Giỏ hàng trống</p>
+  </div>
+  <div class="cart-footer">
+    <div class="cart-total">Tổng: <span id="cartTotal">0₫</span></div>
+    <button class="btn-primary" style="width:100%" onclick="checkout()">Thanh Toán</button>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+  <div class="modal" id="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<script src="JS/app.js"></script>
+</body>
+</html>
