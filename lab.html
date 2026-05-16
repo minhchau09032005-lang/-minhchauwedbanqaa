@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Bài Lab Thực Hành</title>
+    <style>
+        /* CSS cơ bản làm giao diện dạng lưới (Grid) đẹp mắt */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe0ec; /* Giữ tông màu hồng nhạt giống Chloé */
+            color: #333;
+            padding: 40px 20px;
+            margin: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #ff69b4;
+            margin-bottom: 40px;
+        }
+        .back-home {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #ff69b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .lab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .lab-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-decoration: none;
+            color: #555;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        .lab-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff69b4;
+            color: #ff69b4;
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.2);
+        }
+        .lab-icon {
+            font-size: 2.5rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <a href="index.html" class="back-home">⬅ Quay lại Trang chủ Chloé</a>
+    <h1>Báo Cáo Thực Hành Lab</h1>
+    
+    <div class="lab-grid">
+        <a href="Lab01/Vi_du/index.html" class="lab-card">
+            <span class="lab-icon">📁</span> Lab 01 (Ví dụ)
+        </a>
+        <a href="Lab02/lab02_khung_table.html" class="lab-card">
+            <span class="lab-icon">📁</span> Lab 02
+        </a>
+        <a href="Lab03/Lab03/Vi_du/index.html" class="lab-card">
+            <span class="lab-icon">📁</span> Lab 03
+        </a>
+        <a href="Lab04/Lab04/Vi_du/index.html" class="lab-card">
+            <span class="lab-icon">📁</span> Lab 04
+        </a>
+        <a href="Lab05/Lab05/Bai_2/index.html" class="lab-card">
+            <span class="lab-icon">📁</span> Lab 05
+        </a>
+        <a href="Lab06/Lab06/Bai_2_Minh_hoa_layout/index.html" class="lab-card">
+            <span class="lab-icon">📁</span> Lab 06
+        </a>
+        <a href="Lab07/demo_bai_2/index.html" class="lab-card">
+            <span class="lab-icon">📁</span> Lab 07
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
